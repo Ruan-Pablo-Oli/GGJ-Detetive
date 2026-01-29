@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Suspeito_Mordomo
   m_EditorClassIdentifier: Assembly-CSharp::SuspectData
   nomeDoPersonagem: Alfredo
-  fotoDoRosto: {fileID: 0}
+  fotoDoRosto: {fileID: -5873331320764466299, guid: 7c604ad6a9f55b5b7af190ab0564d054, type: 3}
   falaPadrao: Eu estava limpando o tempo todo
   ehOAssassinho: 0

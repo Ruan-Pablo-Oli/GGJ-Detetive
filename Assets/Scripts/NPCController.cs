@@ -17,5 +17,23 @@ public class NPCController : MonoBehaviour,IIteractable
         {
             Debug.Log("Inocente");
         }
+
+        if (UIManager.Instance != null)
+        {
+            // Manda o perfil inteiro (foto, nome e fala) para a tela
+            UIManager.Instance.MostrarDialogoNPC(meuPerfil);
+        }
+    }
+
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            if(UIManager.Instance != null)
+            {
+                UIManager.Instance.FecharDialogo();
+            }
+        }
     }
 }

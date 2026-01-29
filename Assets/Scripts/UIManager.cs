@@ -21,6 +21,11 @@ public class UIManager : MonoBehaviour
 
     private Coroutine corrotinaDoDialogo;
 
+    [Header("Dados personagem no diálogo")]
+    public Image imagemRetrato;
+    public Image moldura;
+    public TextMeshProUGUI textoNome;
+
 
     void Awake()
     {
@@ -89,6 +94,13 @@ public class UIManager : MonoBehaviour
         painelDialogo.SetActive(true);
         textoDialogo.text = mensagem;
 
+        if(imagemRetrato != null)
+        {
+            imagemRetrato.gameObject.SetActive(false);
+            moldura.gameObject.SetActive(false);
+        }
+        if(textoNome != null) textoNome.text = "PISTA";
+
         if (corrotinaDoDialogo != null) 
         {
             StopCoroutine(corrotinaDoDialogo);
@@ -98,7 +110,25 @@ public class UIManager : MonoBehaviour
         corrotinaDoDialogo = StartCoroutine(FecharDialogoAposTempo());
     }
 
+    public void MostrarDialogoNPC(SuspectData suspeito)
+    {
+        painelDialogo.SetActive(true);
+        textoDialogo.text = suspeito.falaPadrao;
 
+        if(textoNome != null)
+        {
+            textoNome.gameObject.SetActive(true);
+            textoNome.text = suspeito.nomeDoPersonagem;
+        }
+
+        if(imagemRetrato != null && suspeito.fotoDoRosto != null)
+        {
+            imagemRetrato.gameObject.SetActive(true);
+            moldura.gameObject.SetActive(true);
+            imagemRetrato.sprite = suspeito.fotoDoRosto;
+            imagemRetrato.preserveAspect = true;
+        }
+    }
 
 
     IEnumerator FecharDialogoAposTempo()
@@ -106,4 +136,6 @@ public class UIManager : MonoBehaviour
         yield return new WaitForSeconds(tempoDeLeitura);
         painelDialogo.SetActive(false);
     }
+
+    public void FecharDialogo() { painelDialogo.SetActive(false); }
 }
