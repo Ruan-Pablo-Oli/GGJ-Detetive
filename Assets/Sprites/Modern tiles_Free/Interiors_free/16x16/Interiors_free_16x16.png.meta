@@ -3178,13 +3178,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Interiors_free_16x16_104
+      name: computador
       rect:
         serializedVersion: 2
-        x: 48
-        y: 1280
+        x: 49
+        y: 1265
         width: 16
-        height: 16
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9096,7 +9096,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Interiors_free_16x16_373
+      name: pista_1
       rect:
         serializedVersion: 2
         x: 224
@@ -10881,8 +10881,8 @@ TextureImporter:
       name: Interiors_free_16x16_454
       rect:
         serializedVersion: 2
-        x: 112
-        y: 832
+        x: 75
+        y: 799
         width: 16
         height: 16
       alignment: 0
@@ -12726,13 +12726,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Interiors_free_16x16_538
+      name: tapete
       rect:
         serializedVersion: 2
         x: 0
-        y: 736
-        width: 16
-        height: 16
+        y: 720
+        width: 49
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -25526,7 +25526,6 @@ TextureImporter:
       Interiors_free_16x16_1037: 266235844
       Interiors_free_16x16_1038: -1164086502
       Interiors_free_16x16_1039: -316121483
-      Interiors_free_16x16_104: 919783297
       Interiors_free_16x16_1040: 358516772
       Interiors_free_16x16_1041: -1695372472
       Interiors_free_16x16_1042: -1775304706
@@ -25901,7 +25900,6 @@ TextureImporter:
       Interiors_free_16x16_370: -1793929996
       Interiors_free_16x16_371: 1240952628
       Interiors_free_16x16_372: -1893881990
-      Interiors_free_16x16_373: -234150306
       Interiors_free_16x16_374: 1679758483
       Interiors_free_16x16_375: 1776364409
       Interiors_free_16x16_376: -1256603100
@@ -26084,7 +26082,6 @@ TextureImporter:
       Interiors_free_16x16_535: 1828075255
       Interiors_free_16x16_536: -1133514559
       Interiors_free_16x16_537: -1510832203
-      Interiors_free_16x16_538: -1277999149
       Interiors_free_16x16_539: 995018868
       Interiors_free_16x16_54: 2517732289577318262
       Interiors_free_16x16_540: 868938291
@@ -26596,6 +26593,9 @@ TextureImporter:
       Interiors_free_16x16_997: 282330853
       Interiors_free_16x16_998: -512462360
       Interiors_free_16x16_999: -1996937165
+      computador: 919783297
+      pista_1: -234150306
+      tapete: -1277999149
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
