@@ -9096,7 +9096,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Interiors_free_16x16_373
+      name: pista_1
       rect:
         serializedVersion: 2
         x: 224
@@ -10881,8 +10881,8 @@ TextureImporter:
       name: Interiors_free_16x16_454
       rect:
         serializedVersion: 2
-        x: 112
-        y: 832
+        x: 75
+        y: 799
         width: 16
         height: 16
       alignment: 0
@@ -25901,7 +25901,6 @@ TextureImporter:
       Interiors_free_16x16_370: -1793929996
       Interiors_free_16x16_371: 1240952628
       Interiors_free_16x16_372: -1893881990
-      Interiors_free_16x16_373: -234150306
       Interiors_free_16x16_374: 1679758483
       Interiors_free_16x16_375: 1776364409
       Interiors_free_16x16_376: -1256603100
@@ -26596,6 +26595,7 @@ TextureImporter:
       Interiors_free_16x16_997: 282330853
       Interiors_free_16x16_998: -512462360
       Interiors_free_16x16_999: -1996937165
+      pista_1: -234150306
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

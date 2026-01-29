@@ -8,7 +8,8 @@ public class PlayerInteract : MonoBehaviour
     public LayerMask interactLayer;
 
     void OnInteract(InputValue value)
-    {
+    {   
+        Debug.Log("Interagir");
         if (value.isPressed)
         {
             TryInteract();
@@ -22,6 +23,11 @@ public class PlayerInteract : MonoBehaviour
         if(foundObject != null)
         {
             IIteractable interactable = foundObject.GetComponent<IIteractable>();
+
+            if(interactable != null)
+            {
+                interactable.Interact();
+            }
         }
     }
 
