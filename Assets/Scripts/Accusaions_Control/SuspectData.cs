@@ -4,6 +4,10 @@ using UnityEngine;
 [CreateAssetMenu(fileName ="NovoSuspeito",menuName ="Detetive/Suspeito")]
 public class SuspectData : ScriptableObject
 {
+
+    [Header("Visual na Cena")]
+    public GameObject prefabDoNPC;
+
     
     [Header("Identidade")]
     public string nomeDoPersonagem;

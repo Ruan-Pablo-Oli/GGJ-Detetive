@@ -16,7 +16,7 @@ public class ClueObject : MonoBehaviour,IIteractable
         }
     }
 
-    public void Interact()
+   public void Interact()
     {
         if(dadosDaPista == null)
         {
@@ -26,9 +26,8 @@ public class ClueObject : MonoBehaviour,IIteractable
 
         if(GameManager.Instance != null)
         {
-            GameManager.Instance.RegistrarColeta(dadosDaPista.nomeDaPista);
+            GameManager.Instance.RegistrarColeta(dadosDaPista.name);
         }
-
 
         if(UIManager.Instance != null)
         {
@@ -40,6 +39,7 @@ public class ClueObject : MonoBehaviour,IIteractable
         {
             InvestigationManager.Instance.RegistrarPIsta(dadosDaPista);
         }
-        gameObject.SetActive(false);
+    
+        Destroy(gameObject); 
     }
 }

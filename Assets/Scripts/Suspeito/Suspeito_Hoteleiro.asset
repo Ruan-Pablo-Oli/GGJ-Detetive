@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17a86066f416a6d3bec32c994c489cf, type: 3}
   m_Name: Suspeito_Hoteleiro
   m_EditorClassIdentifier: Assembly-CSharp::SuspectData
+  prefabDoNPC: {fileID: 2035433461873165746, guid: 4157b56e316ef9d5eac59277f59038e3, type: 3}
   nomeDoPersonagem: Oliveira
   fotoDoRosto: {fileID: -5576955728249628172, guid: 81f554dd251f4c254a733762b56e8344, type: 3}
   falaPadrao: "Eu estava cuidando da recep\xE7\xE3o"
   falaHabito: As vezes eu gosto de pegar borboletas
   falaSobre: Eu tenho um gato chamado oliver
   pistasDoCrime:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 6b98d2f1d7204ac50a2aebcf74a065e3, type: 2}
+  - {fileID: 11400000, guid: 76e7b91773242a261a1a98f70a2cd4bf, type: 2}
   ehOAssassinho: 0

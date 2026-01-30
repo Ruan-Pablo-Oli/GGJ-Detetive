@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17a86066f416a6d3bec32c994c489cf, type: 3}
   m_Name: "Suspeito_H\xF3spede1"
   m_EditorClassIdentifier: Assembly-CSharp::SuspectData
+  prefabDoNPC: {fileID: 4018966059270120557, guid: ba5cfe15870b752eba358ba2ffee89b3, type: 3}
   nomeDoPersonagem: Victor
   fotoDoRosto: {fileID: -5240193634252376602, guid: f6df8f86c379efd2eb5f183f8306a3bb, type: 3}
   falaPadrao: Estava lendo um livron o hall do hotel

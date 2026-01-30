@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17a86066f416a6d3bec32c994c489cf, type: 3}
   m_Name: "Suspeito_H\xF3spede2"
   m_EditorClassIdentifier: Assembly-CSharp::SuspectData
+  prefabDoNPC: {fileID: 140278821340306192, guid: 6603b825bf90639a9b60bfd172be427a, type: 3}
   nomeDoPersonagem: Hiana
   fotoDoRosto: {fileID: 4612387871955684650, guid: 05b4044a9cb4a7d239f3e35a519963d1, type: 3}
   falaPadrao: Eu fiquei no meu quarto dormindo
