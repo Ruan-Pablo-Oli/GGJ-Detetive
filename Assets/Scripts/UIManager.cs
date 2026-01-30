@@ -70,7 +70,7 @@ public class UIManager : MonoBehaviour
         
         slot.sprite = novoIcone;
         slot.type = Image.Type.Simple;
-        slot.SetNativeSize();
+        slot.preserveAspect = true;
         slot.color = corRevelada;
 
         float time = 0;
@@ -110,10 +110,10 @@ public class UIManager : MonoBehaviour
         corrotinaDoDialogo = StartCoroutine(FecharDialogoAposTempo());
     }
 
-    public void MostrarDialogoNPC(SuspectData suspeito)
+    public void MostrarDialogoNPC(SuspectData suspeito,string textoDaVez)
     {
         painelDialogo.SetActive(true);
-        textoDialogo.text = suspeito.falaPadrao;
+        textoDialogo.text = textoDaVez;
 
         if(textoNome != null)
         {

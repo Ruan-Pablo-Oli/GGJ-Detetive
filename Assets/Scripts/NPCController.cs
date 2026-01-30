@@ -4,24 +4,43 @@ public class NPCController : MonoBehaviour,IIteractable
 {
     [Header("Identidade")]
     public SuspectData meuPerfil;
+    private int indiceDaConversa = 0;
 
     public void Interact()
     {
-        Debug.Log("Falando com: " + meuPerfil.nomeDoPersonagem);
+        if(meuPerfil == null) return;
 
-        if (meuPerfil.ehOAssassinho)
+        string textoParaFalar = "";
+
+
+        switch (indiceDaConversa)
         {
-            Debug.Log("Assassino");
+            case 0:{
+                textoParaFalar = meuPerfil.falaPadrao;
+                break;
+            }
+            case 1:{
+                textoParaFalar = meuPerfil.falaHabito;
+                break;
+            }    
+            case 2:{
+                textoParaFalar = meuPerfil.falaSobre;
+                break;
+            }
         }
-        else
-        {
-            Debug.Log("Inocente");
-        }
+
 
         if (UIManager.Instance != null)
         {
             // Manda o perfil inteiro (foto, nome e fala) para a tela
-            UIManager.Instance.MostrarDialogoNPC(meuPerfil);
+            UIManager.Instance.MostrarDialogoNPC(meuPerfil,textoParaFalar);
+        }
+
+        indiceDaConversa++;
+
+        if(indiceDaConversa > 2)
+        {
+            indiceDaConversa = 0;
         }
     }
 

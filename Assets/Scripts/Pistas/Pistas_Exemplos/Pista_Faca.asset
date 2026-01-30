@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdc3e8b9a411b68ff9ce94da8ac44b21, type: 3}
+  m_Name: Pista_Faca
+  m_EditorClassIdentifier: Assembly-CSharp::ClueData
+  nomeDaPista: 'Faca '
+  descricao: Uma faca ensaguentada e enferrujada
+  tracoRevelado: 3
+  icone: {fileID: 761100573506273824, guid: 2337f70154da2328dbc32a1367b2928a, type: 3}

@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
 
+    public GameObject prefabPistaGenerica;
+
     [Header("--- SISTEMA DE PISTAS (MEMÓRIA) ---")]
     public List<string> pistaColetadsa = new List<string>();
 
@@ -70,5 +72,55 @@ public class GameManager : MonoBehaviour
         {
             AccusationManager.Instance.nomeDoVerdadeiroAssassino = assassinoDaVez.nomeDoPersonagem;
         }
+
+        EspalharPistasNaCena();
+    }
+
+    void EspalharPistasNaCena()
+    {
+        ClueSpawnPoint[] pontosPossiveis = FindObjectsByType<ClueSpawnPoint>(FindObjectsSortMode.None);
+
+        if(pontosPossiveis.Length < assassinoDaVez.pistasDoCrime.Count)
+        {
+            Debug.Log("Não tem pontos de spawn o suficiente para todas as pistas");
+            return;
+        }
+
+
+        for(int i = 0; i < pontosPossiveis.Length; i++)
+        {
+            ClueSpawnPoint temp = pontosPossiveis[i];
+            int r = Random.Range(i,pontosPossiveis.Length);
+            pontosPossiveis[i] = pontosPossiveis[r];
+            pontosPossiveis[r] = temp;
+        }
+
+
+        for(int i = 0; i < assassinoDaVez.pistasDoCrime.Count; i++)
+        {
+
+            if (i >= pontosPossiveis.Length) break;
+
+            ClueData dadosDaPista = assassinoDaVez.pistasDoCrime[i];
+            ClueSpawnPoint local = pontosPossiveis[i];
+
+            GameObject novaPistaObj = Instantiate(prefabPistaGenerica,local.transform.position,Quaternion.identity);
+            ClueObject scriptPista = novaPistaObj.GetComponent<ClueObject>();
+            SpriteRenderer spriteR = novaPistaObj.GetComponent<SpriteRenderer>();
+
+            if(scriptPista != null)
+            {
+                scriptPista.dadosDaPista = dadosDaPista;
+                scriptPista.gameObject.SetActive(true);
+            }
+
+
+            if(spriteR != null && dadosDaPista.icone != null)
+            {
+                spriteR.sprite = dadosDaPista.icone;
+            }
+
+        }
+
     }
 }

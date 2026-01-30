@@ -13,6 +13,11 @@ MonoBehaviour:
   m_Name: "Suspeito_H\xF3spede2"
   m_EditorClassIdentifier: Assembly-CSharp::SuspectData
   nomeDoPersonagem: Hiana
-  fotoDoRosto: {fileID: 0}
+  fotoDoRosto: {fileID: 4612387871955684650, guid: 05b4044a9cb4a7d239f3e35a519963d1, type: 3}
   falaPadrao: Eu fiquei no meu quarto dormindo
+  falaHabito: Eu gosto bastante de jardinagem
+  falaSobre: 
+  pistasDoCrime:
+  - {fileID: 11400000, guid: 801b8d89b52d632e2b829e823a286d42, type: 2}
+  - {fileID: 11400000, guid: e24cd2d06356599849067ffd4403cb9b, type: 2}
   ehOAssassinho: 0

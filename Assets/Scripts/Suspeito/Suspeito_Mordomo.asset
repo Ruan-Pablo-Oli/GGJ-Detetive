@@ -15,4 +15,9 @@ MonoBehaviour:
   nomeDoPersonagem: Alfredo
   fotoDoRosto: {fileID: -5873331320764466299, guid: 7c604ad6a9f55b5b7af190ab0564d054, type: 3}
   falaPadrao: Eu estava limpando o tempo todo
+  falaHabito: As vezes gosto de jogar baralho
+  falaSobre: Eu sou canhoto
+  pistasDoCrime:
+  - {fileID: 11400000, guid: 2821a690e55df97b9a1912dfbb5d9d25, type: 2}
+  - {fileID: 11400000, guid: f748f92cbfa638ad3b87946b9b3c467e, type: 2}
   ehOAssassinho: 0

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdc3e8b9a411b68ff9ce94da8ac44b21, type: 3}
+  m_Name: "Pista_Bin\xF3culos"
+  m_EditorClassIdentifier: Assembly-CSharp::ClueData
+  nomeDaPista: "Bin\xF3culos"
+  descricao: "Um bin\xEDculos com lenta apenas no olho esquerdo"
+  tracoRevelado: 3
+  icone: {fileID: 7227352862411592921, guid: c624e3b93af8f7b53ab566036c82826a, type: 3}
